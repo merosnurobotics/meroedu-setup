@@ -1,0 +1,9 @@
+# Add to the LOCAL computer's ~/.ssh/config after replacing example values.
+# Preserve existing profiles. This example contains no real credentials.
+Host jetson
+    HostName 100.101.102.103
+    User robot
+    IdentityFile ~/.ssh/id_ed25519_jetson
+    IdentitiesOnly yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
